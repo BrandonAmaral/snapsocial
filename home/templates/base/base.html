@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    {% block block_head %}
+    {% endblock %}
+
+  </head>
+  <body>
+
+    {% block block_body %}
+    {% endblock %}
+
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>
