@@ -70,8 +70,13 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'snapsocial.wsgi.application'
+AUTH_USER_MODEL = 'accounts.User'
 
+AUTHENTICATION_BACKENDS = (
+    ('django.contrib.auth.backends.ModelBackend'),
+)
+
+WSGI_APPLICATION = 'snapsocial.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
