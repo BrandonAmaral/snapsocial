@@ -1,9 +1,36 @@
 {% extends 'base/base.html' %}
+{% load static %}
 
 {% block block_head %}
-<title>Home</title>
+<title>SnapSocial</title>
+{% if user.is_authenticated %}
+
+<link rel="stylesheet" href="{% static 'css/auth.css' %}">
+
+{% else %}
+
+<link rel="stylesheet" href="{% static 'css/not_auth.css' %}">
+
+{% endif %}
 {% endblock %}
 
 {% block block_body %}
-<h1>Home page!</h1>
+{% if user.is_authenticated %}
+
+<header class="header">
+    <a href="#"><img src="#" alt="Logo"></a>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Teste1</a></li>
+        <li><a href="#">Teste2</a></li>
+      </ul>
+    </nav>
+  </header>
+
+{% else %}
+
+<a id="signup" href="#">Inscrever-se</a>
+<a id="login" href="{% url 'login' %}">Entrar</a>
+
+{% endif %}
 {% endblock %}

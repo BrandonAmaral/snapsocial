@@ -1,0 +1,42 @@
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    color: white;
+}
+
+body {
+    background-color: #171717;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    background-color: #262626;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border-bottom: 1px solid #3d3d3d;
+}
+
+img {
+    max-width: 100%;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 0.4em;
+}
+
+.menu li a {
+    display: block;
+    padding: 0.2em
+}
