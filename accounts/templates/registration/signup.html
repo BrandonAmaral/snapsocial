@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+{% load widget_tweaks %}
+
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="{% static 'img/logo.png' %}"/>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>SnapSocial | Inscrever-se</title>
+</head>
+<body>
+    <img src="{% static 'img/logo.png' %}" alt="Logo">
+    <h1 class="snapsocial-title">Inscrever-se no SnapSocial</h1>
+    <form class="form-signup" method="post" autocomplete="off">
+    {% csrf_token %}
+    <div class="form-group">
+        {% render_field form.username class="form-control" placeholder="Usuário" %}<br>
+        {% render_field form.email class="form-control" placeholder="E-mail" %}<br>
+        {% render_field form.password1 class="form-control" placeholder="Senha" %}<br>
+        {% render_field form.password2 class="form-control" placeholder="Confirmar Senha" %}<br>
+    </div>
+    <input id="enter-button" type="submit" id="button" value="Inscrever-se">
+</body>
+</html>

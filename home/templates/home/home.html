@@ -3,6 +3,7 @@
 
 {% block block_head %}
 <title>SnapSocial</title>
+<link rel="icon" type="image/png" href="{% static 'img/logo.png' %}"/>
 {% if user.is_authenticated %}
 
 <link rel="stylesheet" href="{% static 'css/auth.css' %}">
@@ -18,18 +19,17 @@
 {% if user.is_authenticated %}
 
 <header class="header">
-    <a href="#"><img src="#" alt="Logo"></a>
+    <a href="{% url 'home' %}" class="logo"><img src="{% static 'img/logo.png' %}" alt="Logo" width="40" height="40"></a>
     <nav>
       <ul class="menu">
-        <li><a href="#">Teste1</a></li>
-        <li><a href="#">Teste2</a></li>
+        <li><a href="{% url 'logout' %}">Sair</a></li>
       </ul>
     </nav>
   </header>
 
 {% else %}
 
-<a id="signup" href="#">Inscrever-se</a>
+<a id="signup" href="{% url 'signup' %}">Inscrever-se</a>
 <a id="login" href="{% url 'login' %}">Entrar</a>
 
 {% endif %}

@@ -1,0 +1,32 @@
+body {
+    background-color: #171717;
+}
+
+.snapsocial-title {
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+}
+
+.form-control {
+    padding: 0.5em;
+    padding-right: 5em;
+    font-size: 1.3rem;
+    border: 1px solid #7d2aa3;
+    border-radius: 0.3rem;
+    display: block;
+}
+
+#enter-button {
+    color: white;
+    background-color: #7d2aa3;
+    padding: 0.45em;
+    font-size: 1.3rem;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    display: block;
+}
+
+.label {
+    color: white;
+}

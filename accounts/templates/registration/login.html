@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+{% load static %}
+
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{% static 'img/logo.png' %}"/>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <title>SnapSocial | Entrar</title>
 </head>
 <body>
     <form class="form-login" method="post" autocomplete="off">
-        {% csrf_token %}
-        <h1 class="h3 mb-3 font-weight-normal">Informe seus dados</h1>
+    {% csrf_token %}
+    <img src="{% static 'img/logo.png' %}" alt="Logo">
+    <h1 class="snapsocial-title">Entrar no SnapSocial</h1>
 
-        <label for="username" class="sr-only">E-mail</label>
-        <input type="email" id="username" name="username" class="form-control" placeholder="Informe seu e-mail" required autofocus>
+    <label for="username" class="sr-only"></label>
+    <input type="email" id="username" name="username" class="form-control" placeholder="E-mail" required><br>
 
-        <label for="password" class="sr-only">Senha</label>
-        <input type="password" id="password" name="password" class="form-control" placeholder="Informe sua senha" required>
-        <button type="submit">Acessar</button>
+    <label for="password" class="sr-only"></label>
+    <input type="password" id="password" name="password" class="form-control" placeholder="Senha" required><br>
+    <button id="enter-button" type="submit">Entrar</button>
 </body>
 </html>

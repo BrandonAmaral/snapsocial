@@ -20,12 +20,16 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em;
+    padding: 0.8em;
     border-bottom: 1px solid #3d3d3d;
 }
 
 img {
     max-width: 100%;
+}
+
+.logo {
+    padding-bottom: 0em;
 }
 
 .menu {
