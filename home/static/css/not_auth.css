@@ -1,21 +1,31 @@
-#signup {
-    background-color: #693b8a;
-    color: white;
-    padding: 0.5em;
-    border: 1px solid #693b8a;
-    border-radius: 0.3rem;
-    text-decoration: none;
-}
-
 body {
     background-color: #171717;
 }
 
-#login {
-    background-color: #693b8a;
+.snapsocial-title {
     color: white;
-    padding: 0.5em;
-    border: 1px solid #693b8a;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+}
+
+#enter-button {
+    color: white;
+    background-color: #7d2aa3;
+    padding: 0.45em;
+    font-size: 1.3rem;
+    border: 1px solid black;
     border-radius: 0.3rem;
-    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.8rem;
+}
+
+.logo {
+    display: block;
+    margin-top: 2.5em;
+    margin-left: auto;
+    margin-right: auto;
 }

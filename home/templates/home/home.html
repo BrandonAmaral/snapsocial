@@ -29,8 +29,17 @@
 
 {% else %}
 
-<a id="signup" href="{% url 'signup' %}">Inscrever-se</a>
-<a id="login" href="{% url 'login' %}">Entrar</a>
+  <img class="logo" src="{% static 'img/logo.png' %}" alt="Logo">
+
+  <h1 class="snapsocial-title">Bem-vindo!</h1>
+
+  <form action="{% url 'login' %}">
+    <input id="enter-button" type="submit" value="Entrar">
+  </form>
+
+  <form action="{% url 'signup' %}">
+    <input id="enter-button" type="submit" value="Inscrever-se">
+  </form>
 
 {% endif %}
 {% endblock %}
